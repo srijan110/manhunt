@@ -1,0 +1,21 @@
+{
+  "tables": [
+    {
+      "name": "games",
+      "columns": [
+        {"name": "id", "type": "uuid", "primary": true},
+        {"name": "name", "type": "varchar(255)", "not_null": true},
+        {"name": "host_id", "type": "uuid", "not_null": true},
+        {"name": "zone_polygon_json", "type": "jsonb", "not_null": true},
+        {"name": "shrink_rate", "type": "integer", "default": 5},
+        {"name": "current_round", "type": "integer", "default": 1},
+        {"name": "status", "type": "varchar(20)", "default": "waiting"},
+        {"name": "reveal_radius", "type": "integer", "default": 300},
+        {"name": "sabotage_cooldown", "type": "integer", "default": 60000},
+        {"name": "zone_shrink_interval", "type": "integer", "default": 60000},
+        {"name": "created_at", "type": "timestamp", "default": "now()"},
+        {"name": "started_at", "type": "timestamp"}
+      ]
+    }
+  ]
+}

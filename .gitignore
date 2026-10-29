@@ -1,0 +1,20 @@
+node_modules
+.next
+.env
+.env.local
+.DS_Store
+*.log
+# Dependencies
+node_modules/
+frontend/node_modules/
+server/node_modules/
+
+# Build output
+.next/
+dist/
+build/
+
+# Environment variables
+.env
+.env.*
+!.env.example
